@@ -15,7 +15,7 @@
             <oemconfig>
                 <oem-resize>false</oem-resize>
             </oemconfig>
-            <size unit="G">4</size>
+            <size unit="G">10</size>
         </type>
     </preferences>
 
@@ -75,6 +75,8 @@
         <!-- required for correct partition UUIDs -->
         <package name="dracut"/>
         <package name="zstd"/>
+        <!-- custom -->
+        <package name="podman">
     </packages>
 
     <packages type="bootstrap" bootstrap_package="bootstrap-root-ubuntu-jammy">
