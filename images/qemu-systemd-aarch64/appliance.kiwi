@@ -15,13 +15,14 @@
             <oemconfig>
                 <oem-resize>false</oem-resize>
             </oemconfig>
-            <size unit="G">10</size>
+            <size unit="G">20</size>
         </type>
     </preferences>
 
     <users>
-        <user password="linux" pwdformat="plain" home="/root" name="root" groups="root"/>
+        <user password="redhat" pwdformat="plain" home="/root" name="root" groups="root"/>
         <user password="linux" pwdformat="plain" home="/home/ebcl" name="ebcl" groups="users,kvm" shell="/bin/bash"/>
+        <user password="redhat" pwdformat="plain" home="/home/perfscale" name="perfscale" groups="users,kvm,root" shell="/bin/bash"/>
     </users>
 
     <packages type="image">
@@ -75,8 +76,14 @@
         <!-- required for correct partition UUIDs -->
         <package name="dracut"/>
         <package name="zstd"/>
-        <!-- custom -->
+        <!-- for RH performance testing -->
         <package name="podman"/>
+        <package name="dbus-broker"/>
+        <package name="cgroup-tools"/>
+        <package name="git"/>
+        <package name="less"/>
+        <package name="wget"/>
+        <package name="curl"/>
     </packages>
 
     <packages type="bootstrap" bootstrap_package="bootstrap-root-ubuntu-jammy">
