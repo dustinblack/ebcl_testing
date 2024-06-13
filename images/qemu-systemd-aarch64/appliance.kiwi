@@ -79,11 +79,12 @@
         <!-- for RH performance testing -->
         <package name="podman"/>
         <package name="dbus-broker"/>
-        <package name="cgroup-tools"/>
+        <!-- <package name="cgroup-tools"/> -->
         <package name="git"/>
         <package name="less"/>
         <package name="wget"/>
         <package name="curl"/>
+        <package name="qemu-guest-agent"/>
     </packages>
 
     <packages type="bootstrap" bootstrap_package="bootstrap-root-ubuntu-jammy">

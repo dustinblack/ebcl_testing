@@ -15,7 +15,7 @@
             <oemconfig>
                 <oem-resize>false</oem-resize>
             </oemconfig>
-            <size unit="G">4</size>
+            <size unit="G">20</size>
         </type>
     </preferences>
 
@@ -82,13 +82,16 @@
         <package name="dracut"/>
         <package name="zstd"/>
         <!-- for RH performance testing -->
-        <package name="podman"/>
-        <package name="dbus-broker"/>
-        <package name="cgroup-tools"/>
+        <!-- <package name="podman"/> -->
+        <package name="docker.io"/>
+        <!-- <package name="dbus-broker"/> -->
+        <!-- <package name="cgroup-tools"/> -->
         <package name="git"/>
         <package name="less"/>
         <package name="wget"/>
         <package name="curl"/>
+        <package name="qemu-guest-agent"/>
+        <package name="net-tools"/>
     </packages>
 
     <packages type="bootstrap" bootstrap_package="bootstrap-root-ubuntu-jammy">
